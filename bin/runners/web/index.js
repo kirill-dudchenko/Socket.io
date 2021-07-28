@@ -1,8 +1,8 @@
-const WSRunner = require('./ws')
+const wsRunner = require('./ws')
 const httpRunner = require('./http')
  
  const run = () => {
-    WSRunner(httpRunner())
+    wsRunner(httpRunner())
 }
  
 module.exports = run;
