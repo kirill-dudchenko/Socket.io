@@ -20,19 +20,6 @@ const run = (server) => {
             cb({result});
         })
 
-    // let sum = 0;
-
-    // socket.on('message', (data) => {
-        
-    //     sum+= Number(data);
-    //     console.log(`Frontend sent ${data}`)
-    //     console.log(`Sum ${sum}`)
-
-    //     if (sum > 10) {
-    //         socket.send(sum);
-    //     }
-    // });
-
         socket.on('disconnect', () => {
         console.log(`Disconnection ID: ${socket.id}`)
 
